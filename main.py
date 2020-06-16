@@ -22,7 +22,7 @@ def covid_19():
         print(infProb)
         return render_template('show1.html', inf=round(infProb*100))
     return render_template('index2.html')
-    # return 'Hello, World!' + str(infProb)
+ 
 
 
 if __name__ == "__main__":
