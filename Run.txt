@@ -1,0 +1,4 @@
+run main.py file and open the same folder in idle
+
+
+open CORONA prediction via logistic regression in jupyter notebook cuz its a IPNYB file

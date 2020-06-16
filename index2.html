@@ -1,0 +1,167 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <style>
+        body{
+		background-color: #000000;
+	}
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background:#ff9b00;                  
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+    </style>
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COVID-19 Detector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <form action="/" method="POST">  
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                    <h2>COVID-19</h2>
+                    <h4>Detector and Probability Calculator</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                    <label class="control-label col-sm-2" for="fever">Enter Body Temperature</label>
+                    <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="fever" placeholder="Enter temperature in celsius" name="fever">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label class="control-label col-sm-2" for="age">Enter the age</label>
+                    <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="age" placeholder="Enter your age" name="age">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label class="control-label col-sm-2" for="pain">Body pain</label>
+                    <div class="col-sm-10">
+                        <select class="form-control custom-select" id ="pain" name="pain">
+                            <option value="0">No pain</option>
+                            <option value="1">Accute pain</option>
+                        </select>
+                            
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="runnyNose">Running Nose</label>
+                        <div class="col-sm-10">
+                            <select class="form-control custom-select" id ="runnyNose" name="runnyNose">
+                                <option value="0">Yes</option>
+                                <option value="1">No</option>
+                                
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="diffBreath">Breathing Difficulty</label>
+                            <div class="col-sm-10">
+                                <select class="form-control custom-select" id ="diffBreath" name="diffBreath">
+                                    <option value="-1">No Difficulty</option>
+                                    <option value="0">Less Difficulty</option>
+                                    <option value="1">Severe Difficulty</option>
+                                    
+                                </select>
+                            </div>
+                            </div>
+                    <!-- <div class="form-group">
+                    <label class="control-label col-sm-2" for="comment">Comment:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    </div> -->
+                    <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary"style="border-radius: 30px;">Submit</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <footer style="margin-top: 40px;">
+                <div class="footer-copyright text-center py-3">2020 Solution to problem:
+                    <a href="#"> COVID-19 Detector</a>
+                  </div>
+            </footer>
+            </div>
+    </div>
+    <div>
+    
+    </form>
+    
+</body>

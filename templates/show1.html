@@ -1,0 +1,179 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body{
+		background-color: #000000;
+	}
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+    </style>
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COVID-19 Detector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <header style="background-color: #ff9b00;"><h1 class="text-center mt-5" style="color:white;font-family: sans-serif;">COVID-19 Virus Probability Detector</h1></header>
+        <header style="background-color: blue;"><h2 class="text-center mt-5" style="color:white;">Patient's infection Probability is  : </h2></header>
+        <header style="background-color: red;"><h1 class="text-center mt-5" style="color:white;">{{inf}}%</h1></header>
+        <div class="progress mt-5 ml-5 mr-5" style="height:50px;font-size: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="90" style="width:{{inf}}%">{{inf}}%</div>
+          </div>
+        <h3 class="text-center mt-5" style="color:#ff9b00;">Thanks for using COVID-19 DETECTOR</h3>
+        <a href="/">     
+            <button type="submit" class="btn btn-primary" style="margin-left: 400px;font-size: 35px;padding:20px;margin-top: 30px;border-radius: 25px;">Go back to form</button>
+          </a>
+          
+    </div>
+    <ul style=" display: flex;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); margin-top:300px;margin-left: -25px;">
+        <li style="list-style: none;"><a href="#" style="width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 35px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li style="list-style: none;"><a href="#" style="width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 35px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li style="list-style: none;"><a href="#" style="width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 35px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li style="list-style: none;"><a href="#" style="width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 35px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li style="list-style: none;"><a href="#" style="width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 35px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+    <footer style="margin-top: 150px;">
+        <div class="footer-copyright text-center py-3">2020 Solution to problem:
+            <a href="https://mdbootstrap.com/"> COVID-19 Detector</a>
+          </div>
+    </footer>
+    
+    
+    
+    
+    
+    <!-- <div class="progress mt-5 ml-5 mr-5" style="height:30px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="90" style="width:{{inf}}%">{{inf}}%</div>
+      </div> -->
+    
+</body>
