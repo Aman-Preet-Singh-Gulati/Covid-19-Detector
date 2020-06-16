@@ -21,7 +21,7 @@ def covid_19():
         infProb = clf.predict_proba([inputFeatures])[0][1]
         print(infProb)
         return render_template('show1.html', inf=round(infProb*100))
-    return render_template('index3.html')
+    return render_template('index2.html')
     # return 'Hello, World!' + str(infProb)
 
 
