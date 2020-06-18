@@ -1,3 +1,2 @@
-Flask==1.1.2gunicorn==19.9.0itsdangerous==1.1.0Jinja2==2.10.1joblib==0.14.1MarkupSafe==1.1.1pickle-mixin==1.0.2pickleshare==0.7.5
-requests==2.22.0Werkzeug==0.15.5numpy==1.18.1pandas==1.0.1scikit-learn==0.23.1scipy==1.4.1
+Flask==1.1.2gunicorn==19.9.0Jinja2==2.10.1MarkupSafe==1.1.1Werkzeug==0.15.5numpy>=1.18.1pandas>=1.0.1scikit-learn>=0.23.1scipy>=1.4.1
 
